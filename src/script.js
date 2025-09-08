@@ -159,3 +159,90 @@ console.log("Moltiplica 4 * 6 =", moltiplica(4, 6));
 console.log("Il numero 10 è pari?", isPari(10));
 console.log("Quadrato di 7 =", quadrato(7));
 presentati("Mario", 25);
+
+// ARRAY
+
+// 1. Crea un array e stampa il primo elemento
+let frutti = ["mela", "banana", "pera"];
+console.log("Primo elemento:", frutti[0]);
+
+// 2. Aggiungi "kiwi" alla fine e stampa
+frutti.push("kiwi");
+console.log("Array dopo aggiunta:", frutti);
+
+// 3. Rimuovi l’ultimo elemento con pop e stampalo
+let rimosso = frutti.pop();
+console.log("Elemento rimosso:", rimosso);
+console.log("Array dopo rimozione:", frutti);
+
+// 4. Stampa tutti gli elementi con un ciclo for
+console.log("Tutti i frutti:");
+for (let i = 0; i < frutti.length; i++) {
+  console.log(frutti[i]);
+}
+
+// 5. Stampa la lunghezza dell’array
+console.log("Lunghezza array:", frutti.length);
+
+// OGGETTI
+
+// 1. Crea un oggetto auto
+let auto = {
+  marca: "Fiat",
+  modello: "Panda",
+  anno: 2005
+};
+
+// 2. Stampa solo marca e anno
+console.log("Marca:", auto.marca);
+console.log("Anno:", auto.anno);
+
+// 3. Aggiungi un metodo descrivi()
+auto.descrivi = function() {
+  console.log("Questa auto è una " + this.marca + " " + this.modello + " del " + this.anno);
+};
+
+// Test del metodo  
+auto.descrivi();
+
+
+//INTERAZIONE CON L'UTENTE
+
+// 1. Chiedi il nome e saluta
+// let nome = prompt("Come ti chiami?");
+// alert("Ciao, " + nome + "!");
+
+// // 2. Chiedi un numero e mostra il quadrato
+// let esnumero = prompt("Inserisci un numero:");
+// let esquadrato = esnumero * esnumero;
+// alert("Il quadrato di " + esnumero + " è " + esquadrato);
+
+// // 1. Fai inserire due numeri e mostra la somma
+// let num1 = parseFloat(prompt("Inserisci il primo numero:"));
+// let num2 = parseFloat(prompt("Inserisci il secondo numero:"));
+// alert("La somma è: " + (num1 + num2));
+
+// // 2. Array di nomi e saluto con ciclo
+// let nomi = ["Luca", "Anna", "Marco"];
+// for (let i = 0; i < nomi.length; i++) {
+//   alert("Ciao " + nomi[i] + "!");
+// }
+
+// 3. Oggetto studente
+let studente = {
+  nome: "Mario",
+  voto: 28
+};
+alert(studente.nome + " ha preso " + studente.voto);
+
+// 4. Funzione parola in maiuscolo
+function inMaiuscolo(parola) {
+  return parola.toUpperCase();
+}
+console.log(inMaiuscolo("ciao")); // esempio
+
+// 5. Stampa tutti i quadrati da 1 a 10
+for (let i = 1; i <= 10; i++) {
+  console.log("Quadrato di " + i + " = " + (i * i));
+}
+
