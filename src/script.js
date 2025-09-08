@@ -32,3 +32,26 @@ console.log("5. Tipo di parola:", typeof parola);
 console.log("5. Tipo di flag:", typeof flag);
 console.log("5. Tipo di nulla:", typeof nulla);
 console.log("5. Tipo di nonDefinito:", typeof nonDefinito);
+
+
+// OPERATORI
+
+// 1. Operazioni matematiche base
+console.log("1. 7 + 5 =", 7 + 5);
+console.log("1. 10 - 3 =", 10 - 3);
+console.log("1. 4 * 6 =", 4 * 6);
+console.log("1. 20 / 4 =", 20 / 4);
+
+// 2. Calcola il resto di 17 % 3
+console.log("2. 17 % 3 =", 17 % 3);
+
+// 3. Usa += per sommare 10 a una variabile
+let punti = 50;
+punti += 10;
+console.log("3. Punti dopo += 10:", punti);
+
+// 4. Confronti
+console.log("4. 5 == '5'", 5 == "5");
+console.log("4. 5 === '5'", 5 === "5");
+console.log("4. 5 != 7", 5 != 7);
+console.log("4. 8 !== '8'", 8 !== "8"); 
